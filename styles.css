@@ -1,0 +1,101 @@
+/*-------------------------------------*/
+/*-- Classes for ddMenu that uses transform and transition ---*/
+
+/*-NOTE: code makes the style attributes of the
+allEnclDiv in the function ddMenu, hence there
+is no hard-coded class for that div here-*/
+
+/*A class for the div that includes text "Menu"
+(or whatever the title of the DDmenu is).
+This is argument a) for function makeDDmenuTwo*/
+.menuDiv1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    min-width: 80px;
+    width: fit-content;
+    height: 30px;
+
+    background-color: rgb(115, 29, 212);
+    border: rgb(224, 134, 134) 3px outset;
+    border-radius: 5px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    z-index: 15;
+            }
+
+.menuDiv1:active{
+    transform: translateY(4px);
+    transform: translateX(4px);
+    box-shadow: black 1px 1px 1px;
+                }
+
+
+/* A class for the div that encloses all of the
+ddmenu items. This div slides up and down
+as the user clicks the menu div and slides back up
+when the user clicks a menu item.
+This is argument d) for function makeDDmenuTwo*/
+    .menuItemsEnclDiv1{
+
+        position: relative;
+        /*top value set in dynamically*/
+        left: 0px;
+        width: 98%;
+
+        /* nearly black in dev:
+        border: rgb(14, 13, 13) 3px dotted;  */
+        border-radius: 5px;
+
+        z-index: 10;
+
+        overflow-x: hidden;
+            overflow-y: hidden;
+                      }
+
+/*A class for the div for each menu item.
+This is argument e) for function makeDDmenuTwo*/
+    .menuItemDiv1{
+            position: relative;
+            left:0px;
+            /* Code sets top dynamically */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 91px;
+
+            height: 30px;
+
+            background-color: rgb(115, 29, 212);
+            border: rgb(224, 134, 134) 3px outset;
+            border-radius: 5px;
+
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            }
+
+.menuItemDiv1:active{
+    box-shadow: #d6c14c 5px 0px 5px, #d6c14c  -5px 0px 5px;
+                    }
+
+/* A class for the <p> for the
+title of the "Menu" div and for
+the <p> for the title of each
+menu item,
+This is argument b) and f) for function makeDDmenuTwo */
+    .menuItemP1{
+    font-size: 16px;
+    line-height: 17px;
+    font-family: 'Open Sans-Condensed-ExtraBold';
+    color: #f5efef;
+               }
+
+/*-----------------------------------------------------------------------*/

@@ -1,0 +1,15 @@
+{
+  "name": "ddmenufornpm",
+  "version": "1.0.0",
+  "description": "A javascript function that will create a dropdown menu",
+  "main": "README.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dropdown",
+    "menu"
+  ],
+  "author": "Mukund Pandit",
+  "license": "ISC"
+}
